@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     
     'boards_app.apps.BoardsAppConfig',
     'rest_framework',
+    'frontend',
 ]
 
 MIDDLEWARE = [
