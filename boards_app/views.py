@@ -5,9 +5,16 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm, Password
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse 
+from .models import Board
+from .serializers import BoardSerializer
+from rest_framework import generics
 
 def home(request):
     if(str(request.user)!="AnonymousUser"):
         return render(request, 'base/home.html', {})
     else:
         return render(request, 'base/index.html', {})
+
+class BoardListCreate(generics.ListCreateAPIView):
+    queryset = Board.objects.all()
+    serializer_class = BoardSerializer

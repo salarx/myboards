@@ -57,7 +57,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     
-    'boards_app'
+    'boards_app.apps.BoardsAppConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
