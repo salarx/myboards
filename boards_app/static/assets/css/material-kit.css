@@ -14,11 +14,11 @@
  */
 /*     brand Colors              */
 .carousel.carousel-full-navigation .left {
-  cursor: url("../../img/arrow-left.png"), url("../../img/arrow-left.cur"), default !important;
+  cursor: url("../img/arrow-left.png"), url("../img/arrow-left.cur"), default !important;
 }
 
 .carousel.carousel-full-navigation .right {
-  cursor: url("../../img/arrow-right.png"), url("../../img/arrow-right.cur"), default !important;
+  cursor: url("../img/arrow-right.png"), url("../img/arrow-right.cur"), default !important;
 }
 
 .card {
@@ -17372,8 +17372,12 @@ footer .pull-center {
   margin: 27px 0 0 0;
 }
 
-.card-login .form {
+.card-login .form-login {
   min-height: 420px;
+}
+
+.card-login .form-signup {
+  min-height: 480px;
 }
 
 .card-login .social-line {

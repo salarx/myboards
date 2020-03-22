@@ -1,0 +1,57 @@
+{% extends 'base/base.html' %}
+{% block nav %}
+{% load static %}
+
+  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+          MyBoards </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="javascript:;" class="nav-link">
+              Discover
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:;" class="nav-link">
+              Wishlist
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'account_login' %}" class="btn btn-danger btn-raised">
+              Login
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+  </nav>
+
+{% endblock %}
+
+{% block main %}
+
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('{% static "assets/img/profile_city.jpg" %}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="title">Create, Share, Open Anywhere.</h1>
+          <h4>Imagine a whiteboard, filled with lists of sticky notes, with each note as a task for you and your team. Now imagine that each of those sticky notes has photos, attachments, comments and collaborate with your teammates. Now imagine that you can take that whiteboard anywhere you go and can access it from any computer through the web. All this is possible using MyBoards</h4>
+          <br>
+          <a href="{% url 'account_signup' %}" target="_blank" class="btn btn-danger btn-raised btn-lg">
+            Get started
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+{% endblock %}
