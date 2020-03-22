@@ -4,6 +4,6 @@ from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
-    # path('', views.home, name="home"),
-    path('api/board/', views.BoardListCreate.as_view()),
+    path('', views.home, name="home"),
+    # path('api/board/', views.BoardListCreate.as_view()),
 ]

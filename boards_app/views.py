@@ -15,6 +15,6 @@ def home(request):
     else:
         return render(request, 'base/index.html', {})
 
-class BoardListCreate(generics.ListCreateAPIView):
-    queryset = Board.objects.all()
-    serializer_class = BoardSerializer
+# class BoardListCreate(generics.ListCreateAPIView):
+#     queryset = Board.objects.all()
+#     serializer_class = BoardSerializer

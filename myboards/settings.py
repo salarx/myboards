@@ -59,7 +59,7 @@ INSTALLED_APPS = [
     
     'boards_app.apps.BoardsAppConfig',
     'rest_framework',
-    'frontend',
+    # 'frontend',
 ]
 
 MIDDLEWARE = [
@@ -117,7 +117,7 @@ DATABASES = {
         'NAME': 'boards_app',
         'USER': 'boards_admin',
         'PASSWORD': ';jwe#ba~Wx-(z3dj',
-        'HOST': 'localhost',
+        'HOST': '139.59.5.112',
         'PORT': '',
     }
 }
