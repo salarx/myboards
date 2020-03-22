@@ -117,7 +117,7 @@ DATABASES = {
         'NAME': 'boards_app',
         'USER': 'boards_admin',
         'PASSWORD': ';jwe#ba~Wx-(z3dj',
-        'HOST': '139.59.5.112',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }
